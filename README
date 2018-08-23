@@ -1,0 +1,14 @@
+AnagramFinder
+=============
+
+Locates anagrams of a word in a pre-constructed index. This software is broken down into two primary components: the index builder and the search frontend itself.
+
+Index builder
+-------------
+
+The index builder takes in a file of words delimited by `\n`. It then generates a non-unique identifier (calling it a hash is technically wrong as anagrams will produce the same identifier) and populates a dictionary with it, then serializes the dictionary into a file for use with the search frontend.
+
+Search frontend
+---------------
+
+~WIP~
