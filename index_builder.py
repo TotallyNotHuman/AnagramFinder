@@ -30,7 +30,6 @@ def index_builder():
                     wordmap[w].append(words[i])
                 except KeyError:
                     wordmap[w] = [words[i]]
-                print(f'Word {i} of {len(words) - 1} processed')
             with open('index.json', 'w+') as index:
                 json.dump(wordmap, index)
         t_1 = time.time()

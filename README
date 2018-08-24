@@ -8,7 +8,7 @@ Index builder
 
 The index builder takes in a file of words delimited by `\n`. It then generates a non-unique identifier (calling it a hash is technically wrong as anagrams will produce the same identifier) and populates a dictionary with it, then serializes the dictionary into a file for use with the search frontend.
 
-In the current iteration it is able to construct an index from 370k words in 18.98 seconds (19.5 kword/s). There is most likely room for improvement.
+In its current iteration it is able to construct an index from 370k words in 2.76 seconds (133.9 kword/s). There is most likely still room for improvement.
 
 Search frontend
 ---------------
