@@ -22,14 +22,14 @@ def index_builder():
         with open(sys.argv[1]) as file:
             words = [line.rstrip('\n') for line in file]
             wordmap = {}
-            for i in range(len(words)):
-                l = list(words[i])
+            for word in words:
+                l = list(word)
                 l.sort()
                 w = ''.join(l)
                 try:
-                    wordmap[w].append(words[i])
+                    wordmap[w].append(word)
                 except KeyError:
-                    wordmap[w] = [words[i]]
+                    wordmap[w] = [word]
             with open('index.json', 'w+') as index:
                 json.dump(wordmap, index)
         t_1 = time.time()
